@@ -3,9 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"local/gosam/stock"
 	"log"
 	"net/http"
+
+	"local/gosam/stock"
 )
 
 func main() {
