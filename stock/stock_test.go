@@ -8,7 +8,8 @@ import (
 )
 
 func TestParseStocks(t *testing.T) {
-	payload := `[{
+	payload := `
+[{
       "symbol": "AAPL",
       "price": 23.12,
       "currency": "USD",
