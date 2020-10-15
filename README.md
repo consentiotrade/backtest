@@ -16,7 +16,7 @@ We would like to:
 ## howto
 
 * if you haven't already, [install Go](https://golang.org/dl/)
-* compile:  from this directory `go build local/gosam/cmd/serve`
+* compile:  from this directory `go build ./cmd/serve`
 * run: from this directory: `./serve`
 * open browser at [root](http://localhost:8080/)
-* run tests: `go test -v local/gosam/stock/...`
+* run tests: `go test -v ./stock/...`
