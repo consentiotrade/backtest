@@ -2,9 +2,10 @@ package stock_test
 
 import (
 	"encoding/json"
-	"local/gosam/stock"
 	"testing"
 	"time"
+
+	"github.com/consentiotrade/backtest/stock"
 )
 
 func TestParseStocks(t *testing.T) {
@@ -19,13 +20,13 @@ func TestParseStocks(t *testing.T) {
       "symbol": "AMZN",
       "price": 33.12,
       "currency": "USD",
-      "time": "2019-01-31T14:19:01Z"      
+      "time": "2019-01-31T14:19:01Z"
 },
 {
       "symbol": "MSFT",
       "price": 12.2,
       "currency": "USD",
-      "time": "2019-01-31T10:21:12Z"      
+      "time": "2019-01-31T10:21:12Z"
 }]`
 	sts, err := stock.ParseStocks(json.RawMessage(payload))
 	if err != nil {

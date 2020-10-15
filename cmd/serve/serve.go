@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"local/gosam/stock"
+	"github.com/consentiotrade/backtest/stock"
 )
 
 func main() {
